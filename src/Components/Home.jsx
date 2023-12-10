@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { useGlobalContext } from '../Context/Global'
 import PopularAnime from './PopularAnime'
-import Upcoming from './Upcoming'
+import UpComing from './UpComing'
 import Airing from './Airing'
 
 const Home = () => {
@@ -25,7 +25,7 @@ const Home = () => {
 			case 'airing':
 				return <Airing rendered={rendered} />
 			case 'upcoming':
-				return <Upcoming rendered={rendered} />
+				return <UpComing rendered={rendered} />
 			default:
 				return <Popular rendered={rendered} />
 		}
